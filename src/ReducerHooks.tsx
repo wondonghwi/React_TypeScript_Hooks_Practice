@@ -9,7 +9,8 @@ type State = {
     isGood: boolean;
 };
 
-type Action = { type: 'SET_COUNT'; count: number }
+type Action =
+    | { type: 'SET_COUNT'; count: number }
     | { type: 'SET_TEXT'; text: string; }
     | { type: 'SET_COLOR'; color: Color; }
     | { type: 'TOGGLE_GOOD'; }
@@ -53,7 +54,7 @@ const ReducerHooks = () => {
 
     const setCount = () => dispatch({type: 'SET_COUNT', count: state.count + 1}); // count 를 넣지 않으면 에러발생
     const setText = () => dispatch({type: 'SET_TEXT', text: 'bye'}); // text 를 넣지 않으면 에러 발생
-    const setColor = () => dispatch({type: 'SET_COLOR', color: 'orange'}); // orange 를 넣지 않으면 에러 발생
+    const setColor = () => dispatch({type: 'SET_COLOR', color: 'orange'}); // color 를 넣지 않으면 에러 발생
     const toggleGood = () => dispatch({type: 'TOGGLE_GOOD'});
 
     return (

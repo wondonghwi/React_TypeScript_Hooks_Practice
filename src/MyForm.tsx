@@ -30,7 +30,7 @@ const MyForm = ({onSubmit}: MyFormProps) => {
             name: '',
             description: ''
         });
-        //타입스크립트는 널 체킹!
+        //타입스크립트는 uerRef를 사용할때 null 체킹!
         if (!inputRef.current) {
             return;
         }
