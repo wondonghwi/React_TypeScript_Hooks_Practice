@@ -1,7 +1,7 @@
 import React from 'react';
 import Greetings from './Greetings';
-import Counter from "./Counter";
 import MyForm from "./MyForm";
+import ReducerHooks from "./ReducerHooks";
 
 const App = () => {
     const onClick = (name: string) => {
@@ -16,7 +16,7 @@ const App = () => {
         <>
             <Greetings name="Donghwi" onClick={onClick}/>
             <hr/>
-            <Counter/>
+            <ReducerHooks/>
             <hr/>
             <MyForm onSubmit={onSubmit}/>
             <hr/>
