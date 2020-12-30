@@ -19,8 +19,8 @@ const Greetings = ({name, mark, optional, onClick}: GreetingsProps) => {
                 <button onClick={handleClick}>Click Me</button>
             </div>
         </div>
-    )
-};
+    );
+}
 
 Greetings.defaultProps = {
     mark: '!'
