@@ -2,7 +2,7 @@
 
 ## 기술 스택 
 
-React (Hooks) , TypeScript 
+React (Hooks) + TypeScript 
 
 Hooks => useState , useReducer , useRef
 
